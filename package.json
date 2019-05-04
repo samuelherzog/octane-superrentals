@@ -18,9 +18,9 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.2",
     "@ember/optional-features": "^0.7.0",
     "@glimmer/component": "^0.14.0-alpha.3",
+    "babel-eslint": "^8.0.2",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.2.20",
     "ember-cli": "github:ember-cli/ember-cli#d0a6c814248d42333929f3c98de15da2d41051ed",
@@ -31,8 +31,10 @@
     "ember-cli-htmlbars": "^3.0.0",
     "ember-cli-htmlbars-inline-precompile": "^2.0.0",
     "ember-cli-inject-live-reload": "^2.0.1",
+    "ember-cli-mirage": "^0.4.15",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-template-lint": "^1.0.0-beta.1",
+    "ember-cli-tutorial-style": "^3.1.0",
     "ember-cli-uglify": "^2.1.0",
     "ember-data": "github:emberjs/data#1df833396855d956b817540923dd89338463fec2",
     "ember-export-application-global": "^2.0.0",

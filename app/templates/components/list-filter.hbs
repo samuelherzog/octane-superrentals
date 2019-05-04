@@ -1,0 +1,9 @@
+<div class="list-filter">
+  <Input
+    value={{this.value}}
+    class="light"
+    placeholder="Filter By City"
+    @key-up={{action "handleFilterEntry"}}
+  />
+</div>
+{{yield this.results}}

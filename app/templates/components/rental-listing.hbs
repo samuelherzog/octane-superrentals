@@ -1,24 +1,24 @@
-  <article class="listing">
-    <a
-      {{on "click" (fn this.toggleImageSize)}} 
-      class="image {{if this.isWide "wide"}}" 
-      role="button">
-      <img src="{{@rental.image}}" alt="">
-      <small>View Larger</small>
-    </a>
-    <div class="details">
-      <h3>{{@rental.title}}</h3>
-      <div class="detail owner">
-        <span>Owner:</span> {{@rental.owner}}
-      </div>
-      <div class="detail type">
-        <span>Type:</span> {{rental-property-type @rental.category}} - {{@rental.category}}
-      </div>
-      <div class="detail location">
-        <span>Location:</span> {{@rental.city}}
-      </div>
-      <div class="detail bedrooms">
-        <span>Bedrooms:</span> {{@rental.bedrooms}}
-      </div>
+<article class="listing">
+  <a
+    {{on "click" (fn this.toggleImageSize)}} 
+    class="image {{if this.isWide "wide"}}" 
+    role="button">
+    <img src={{@rental.image}} alt="">
+    <small>View Larger</small>
+  </a>
+  <div class="details">
+    <h3>{{@rental.title}}</h3>
+    <div class="detail owner">
+      <span>Owner:</span> {{@rental.owner}}
     </div>
-  </article>
+    <div class="detail type">
+      <span>Type:</span> {{rental-property-type @rental.category}} - {{@rental.category}}
+    </div>
+    <div class="detail location">
+      <span>Location:</span> {{@rental.city}}
+    </div>
+    <div class="detail bedrooms">
+      <span>Bedrooms:</span> {{@rental.bedrooms}}
+    </div>
+  </div>
+</article>

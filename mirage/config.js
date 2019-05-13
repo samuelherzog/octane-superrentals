@@ -37,6 +37,7 @@ const rentals = [{
 }];
 
 export default function() {
+  this.passthrough('https://api.mapbox.com/**');
   this.namespace = '/api';
 
   this.get('/rentals', function(db, request) {

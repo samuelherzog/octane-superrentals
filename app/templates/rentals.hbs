@@ -5,13 +5,4 @@
   <LinkTo @route="about" class="button">About Us</LinkTo>
 </div>
 
-<ListFilter
-  @filter={{action "filterByCity"}}
-  as |filteredResults|
->
-  <ul class="results">
-    {{#each filteredResults as |rentalUnit|}}
-      <RentalListing @rental={{rentalUnit}} />
-    {{/each}}
-  </ul>
-</ListFilter>
+{{outlet}}

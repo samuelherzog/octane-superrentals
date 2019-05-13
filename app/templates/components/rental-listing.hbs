@@ -7,7 +7,11 @@
     <small>View Larger</small>
   </a>
   <div class="details">
-    <h3>{{@rental.title}}</h3>
+    <h3>
+      <LinkTo @route="rentals.show" @model={{@rental}} class={{@rental.id}}>
+        {{@rental.title}}
+      </LinkTo>
+    </h3>
     <div class="detail owner">
       <span>Owner:</span> {{@rental.owner}}
     </div>
